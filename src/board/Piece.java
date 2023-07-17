@@ -2,8 +2,20 @@ package board;
 
 public class Piece {
 
-	public Position position;
+	protected Position position;
+	private Board board;
 	
+	
+	
+	public Piece(Board board) {
+		position = null;
+		this.board = board;
+	}
+
+	protected Board getBoard() {
+		return board;
+	}
+
 	public boolean[][] possibleMoves(){
 		return null;
 	}
